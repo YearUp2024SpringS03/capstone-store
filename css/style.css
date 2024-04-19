@@ -1,36 +1,7 @@
-.body {
-  width: fit-content;
-}
-
-.img_deg {
-  float: right;
-  width: auto;
-  top: 10;
-  
-}
-
-.imgMain {
-  float: inline-end;
-  width: auto;
-  width: fit-content;
-}
-
-
-.column {
-   float: left; 
-   width: 33.33%;
-   padding: 5px;
-}
-
-.row::after {
-    content: "";
-    display: table;
-    clear: b;
-}
 .row {
-    display: -ms-flexbox; /* IE10 */
+    display: -ms-flexbox; 
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0 -16px;
   }
@@ -41,14 +12,15 @@
   }
   
   .col-50 {
-    -ms-flex: 50%; /* IE10 */
+    -ms-flex: 50%
     flex: 50%;
   }
   
   .col-75 {
-    -ms-flex: 75%; /* IE10 */
+    -ms-flex: 75%; 
     flex: 75%;
   }
+  
   .col-25,
   .col-50,
   .col-75 {
@@ -58,7 +30,7 @@
   .container {
     background-color: #f6f7ffd0;
     padding: 5px 20px 15px 20px;
-    border: 3px solid rgb(0, 0, 0);
+    border: 1px solid lightgrey;
     border-radius: 3px;
   }
   
@@ -102,6 +74,7 @@
     color: grey;
   }
   
+
   @media (max-width: 800px) {
     .row {
       flex-direction: column-reverse;
